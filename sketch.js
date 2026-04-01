@@ -22,12 +22,15 @@ function draw() {
   background("white");
 
   //title
+  textFont("zumme-cut");
+  textStyle(BOLD);
   textSize(75);
   textAlign(CENTER);
   fill("black");
   text("HEATED RIVALRY", 350, 85);
 
   //episode 1
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
@@ -38,6 +41,7 @@ function draw() {
   image(img1, 25, 130, 190, 135);
 
   //episode 2
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
@@ -48,6 +52,7 @@ function draw() {
   image(img2, 250, 140, 190, 125);
 
   //episode 3
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
@@ -58,6 +63,7 @@ function draw() {
   image(img3, 475, 125, 190, 140);
 
   //episode 4
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
@@ -68,6 +74,7 @@ function draw() {
   image(img4, 25, 315, 190, 140);
 
   //episode 5
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
@@ -78,6 +85,7 @@ function draw() {
   image(img5, 250, 315, 190, 140);
 
   //episode 6
+  textFont("zumme");
   textAlign(LEFT);
   textSize(10);
   fill("black");
