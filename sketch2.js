@@ -2,21 +2,21 @@ let img16;
 let img17;
 let img18;
 let img19;
-var backgrounds = ["background 1", "background 2"];
+var backgrounds = ["background1", "background2"];
 var currentImage;
 
 function preload() {
-  img16 = loadImage("gif 4.png");
-  img17 = loadImage("gif 5.png");
-  img18 = loadImage("gif 6.png");
-  img19 = loadImage("tv remote.png");
+  img16 = loadImage("gif_4.png");
+  img17 = loadImage("gif_5.png");
+  img18 = loadImage("gif_6.png");
+  img19 = loadImage("tv_remote.png");
 }
 
 function setup() {
   createCanvas(700, 500);
-  background1 = loadImage("episode 2 background.png");
-  background2 = loadImage("episode 2 background 2.png");
-  currentImage = background1;
+  background1 = loadImage("episode_2_background.png");
+  background2 = loadImage("episode_2_background_2.png");
+  currentImage = "background1";
 }
 
 function draw() {
@@ -46,13 +46,13 @@ function draw() {
 
 function mousePressed() {
   if (backgrounds == 0) {
-    currentImage = background1;
+    currentImage = "background1";
     console.log("background1");
-  } else if (background2 == 1) {
-    currentImage = background2;
+  } else if ("background2" == 1) {
+    currentImage = "background2";
     console.log("background2");
   } else {
-    currentImage = background1;
+    currentImage = "background1";
     backgrounds = -1;
   }
   backgrounds = backgrounds + 1;

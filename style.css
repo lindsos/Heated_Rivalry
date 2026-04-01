@@ -1,8 +1,17 @@
-html, body {
+@import url("https://use.typekit.net/tmc3vuo.css");
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 canvas {
   display: block;
+}
+
+body {
+  font-family: zuume, sans-serif;
+  font-family: zuume-cut, sans-serif;
+  font-family: helvetica-neue-lt-pro, sans-serif;
 }

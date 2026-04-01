@@ -6,12 +6,12 @@ let img5;
 let img6;
 
 function preload() {
-  img1 = loadImage("episode 1.png");
-  img2 = loadImage("episode 2 background.png");
-  img3 = loadImage("episode 3 background.png");
-  img4 = loadImage("episode 4 background.png");
-  img5 = loadImage("episode 5 background.png");
-  img6 = loadImage("episode 6 background.png");
+  img1 = loadImage("assets/episode_1/episode_1.png");
+  img2 = loadImage("assets/episode_2/episode_2_background.png");
+  img3 = loadImage("assets/episode_3/episode_3_background.png");
+  img4 = loadImage("assets/episode_4/episode_4_background.png");
+  img5 = loadImage("assets/episode_5/episode_5_background.png");
+  img6 = loadImage("assets/episode_6/episode_6_background.png");
 }
 
 function setup() {

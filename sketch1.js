@@ -9,15 +9,16 @@ let img14;
 let img15;
 
 function preload() {
-  img7 = loadImage('episode 1 background.png');
-  img8 = loadImage('hockey net left.png');
-  img9 = loadImage('hockey net right.png');
-  img10 = loadImage('shane.png');
-  img11 = loadImage('ilya.png');
-  img12 = loadImage ('gif 1.png');
-  img13 = loadImage ('gif 2.png');
-  img14 = loadImage ('gif 3.png');
-  img15 = loadImage ('tv remote.png');
+  img7 = loadImage('assets/episode_1/episode_1_background.png');
+  img8 = loadImage('assets/episode_1/hockey_net_left.png');
+  img9 = loadImage('assets/episode_1/hockey_net_right.png');
+  img10 = loadImage('assets/episode_1/shane.png');
+  img11 = loadImage('assets/episode_1/ilya.png');
+  img12 = loadImage ('assets/episode_1/gif_1.png');
+  img13 = loadImage ('assets/episode_1/gif_2.png');
+  img14 = loadImage ('assets/episode_1/gif_3.png');
+  img15 = loadImage ('assets/tv_remote.png');
+  
 }
 
 function setup() {
