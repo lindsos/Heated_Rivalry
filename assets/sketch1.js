@@ -1,0 +1,63 @@
+let img7;
+let img8;
+let img9;
+let img10;
+let img11;
+let img12;
+let img13; 
+let img14;
+let img15;
+
+function preload() {
+  img7 = loadImage('episode 1 background.png');
+  img8 = loadImage('hockey net left.png');
+  img9 = loadImage('hockey net right.png');
+  img10 = loadImage('shane.png');
+  img11 = loadImage('ilya.png');
+  img12 = loadImage ('gif 1.png');
+  img13 = loadImage ('gif 2.png');
+  img14 = loadImage ('gif 3.png');
+  img15 = loadImage ('tv remote.png');
+}
+
+function setup() {
+  createCanvas(700, 500);
+  noLoop();
+}
+
+function draw() {
+  background('#D9DDE9');
+  image (img7, 0, 0, 700, 500);
+  image (img8, 0, 310, 200, 190);
+  image (img9, 500, 310, 200, 190);
+  image (img10, 230, 295, 120, 200);
+  image (img11, 360, 275, 120, 220);
+  textSize (12);
+  textAlign (CENTER);
+  fill ('black');
+  text ('You will not', 120, 190);
+  text ('be so nice', 120, 200);
+  text ('when we beat', 120, 210);
+  text ('you.', 120, 220);
+  text ('Is lie. Liar', 610, 210);
+  text ('told you this.', 610, 220);
+  text ('Is', 360, 135);
+  text ('someone', 360, 145);
+  text ('chasing', 360, 155);
+  text ('you?', 360, 165);
+  image (img12, 75, 165, 95, 95);
+  image (img13, 560, 165, 95, 95);
+  image (img14, 330, 100, 55, 95);
+  textSize (10);
+  text ('Return to home', 40, 55);
+  image (img15, 25, 10, 35, 35);
+  let x = frameCount;
+  fill ('black');
+  ellipse (350, 480, 20, 10);
+}
+function doubleClicked(img10) {
+  loop();
+}
+function doubleClicked(img11) {
+  loop();
+}
