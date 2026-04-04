@@ -13,7 +13,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(windowWidth, windowHeight);
+  link = createA("index.html", "Return to home");
   background1 = loadImage("episode_2_background.png");
   background2 = loadImage("episode_2_background_2.png");
   currentImage = "background1";
@@ -38,9 +39,12 @@ function draw() {
   image(img16, 505, 75, 110, 60);
   image(img17, 75, 75, 95, 70);
   image(img18, 315, 400, 115, 70);
-  textSize(10);
-  fill("white");
-  text("Return to home", 40, 55);
+  link.position(40, 55); 
+  link.style('font-size', '10px');
+  link.style('color', 'white');
+  link.style('z-index', '5'); 
+  link.style('text-decoration', 'none'); 
+  link.style('font-family', 'helvetica-neue-lt-pro');
   image(img19, 25, 10, 35, 35);
 }
 
@@ -56,4 +60,8 @@ function mousePressed() {
     backgrounds = -1;
   }
   backgrounds = backgrounds + 1;
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }

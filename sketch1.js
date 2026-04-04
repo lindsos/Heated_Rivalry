@@ -22,7 +22,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(700, 500);
+  createCanvas(windowWidth, windowHeight);
+  link = createA("index.html", "Return to home");
   noLoop();
 }
 
@@ -49,8 +50,12 @@ function draw() {
   image (img12, 75, 165, 95, 95);
   image (img13, 560, 165, 95, 95);
   image (img14, 330, 100, 55, 95);
-  textSize (10);
-  text ('Return to home', 40, 55);
+  link.position(40, 55); 
+  link.style('font-size', '10px');
+  link.style('color', 'black');
+  link.style('z-index', '5'); 
+  link.style('text-decoration', 'none'); 
+  link.style('font-family', 'helvetica-neue-lt-pro');
   image (img15, 25, 10, 35, 35);
   let x = frameCount;
   fill ('black');
@@ -61,4 +66,8 @@ function doubleClicked(img10) {
 }
 function doubleClicked(img11) {
   loop();
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
