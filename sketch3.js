@@ -58,7 +58,8 @@ function draw() {
   text("do you.", 485, 230);
 
   image(img21, 709, 90, 149, 171);
-  image(img22, 994, 567, 496, 211);
+  image(img22, 423, 315, 217, 117);
+
   image(img23, 994, 270, 171, 171);
   image(img24, 69, 18, 80, 63);
   link.position(23, 81);
