@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1600, 900);
   link1 = createA("index1.html", "EPISODE 1- ROOKIES");
   link2 = createA("index2.html", "EPISODE 2- OLYMPIANS");
   link3 = createA("index3.html", "EPISODE 3- HUNTER");
@@ -28,16 +28,16 @@ function draw() {
   background("white");
 
   //title
-  textSize(120);
+  textSize(240);
   textAlign(CENTER);
   fill("black");
-  text("HEATED RIVALRY", 350, 105);
+  text("HEATED RIVALRY", 800, 189);
   textFont("zuume-cut");
   textStyle(BOLD);
 
   //episode 1
-  link1.position(25, 270);
-  link1.style("font-size", "10px");
+  link1.position(57, 486);
+  link1.style("font-size", "20px");
   link1.style("text-align", "LEFT");
   link1.style("text-style", "NORMAL");
   link1.style("color", "black");
@@ -45,12 +45,12 @@ function draw() {
   link1.style("font-family", "zumme");
   noStroke();
   fill("#D9DDE9");
-  rect(25, 125, 190, 140);
-  image(img1, 25, 130, 190, 135);
+  rect(57, 225, 434, 252);
+  image(img1, 57, 234, 434, 243);
 
   //episode 2
-  link2.position(250, 270);
-  link2.style("font-size", "10px");
+  link2.position(571, 486);
+  link2.style("font-size", "20px");
   link2.style("text-align", "LEFT");
   link2.style("text-style", "NORMAL");
   link2.style("color", "black");
@@ -58,12 +58,12 @@ function draw() {
   link2.style("font-family", "zumme");
   noStroke();
   fill("#111C45");
-  rect(250, 125, 190, 140);
-  image(img2, 250, 140, 190, 125);
+  rect(571, 225, 434, 252);
+  image(img2, 571, 252, 434, 225);
 
   //episode 3
-  link3.position(475, 270);
-  link3.style("font-size", "10px");
+  link3.position(1086, 486);
+  link3.style("font-size", "20px");
   link3.style("text-align", "LEFT");
   link3.style("text-style", "NORMAL");
   link3.style("color", "black");
@@ -71,12 +71,12 @@ function draw() {
   link3.style("font-family", "zumme");
   noStroke();
   fill("#163355");
-  rect(475, 125, 190, 140);
-  image(img3, 475, 125, 190, 140);
+  rect(1086, 225, 434, 252);
+  image(img3, 1086, 225, 434, 252);
 
   //episode 4
-  link4.position(25, 460);
-  link4.style("font-size", "10px");
+  link4.position(57, 828);
+  link4.style("font-size", "20px");
   link4.style("text-align", "LEFT");
   link4.style("text-style", "NORMAL");
   link4.style("color", "black");
@@ -84,12 +84,12 @@ function draw() {
   link4.style("font-family", "zumme");
   noStroke();
   fill("#F5FDFF");
-  rect(25, 315, 190, 140);
-  image(img4, 25, 315, 190, 140);
+  rect(57, 567, 434, 252);
+  image(img4, 57, 567, 434, 252);
 
   //episode 5
-  link5.position(250, 460);
-  link5.style("font-size", "10px");
+  link5.position(571, 828);
+  link5.style("font-size", "20px");
   link5.style("text-align", "LEFT");
   link5.style("text-style", "NORMAL");
   link5.style("color", "black");
@@ -97,12 +97,12 @@ function draw() {
   link5.style("font-family", "zumme");
   noStroke();
   fill("#A3DEF8");
-  rect(250, 315, 190, 140);
-  image(img5, 250, 315, 190, 140);
+  rect(571, 567, 434, 252);
+  image(img5, 571, 567, 434, 252);
 
   //episode 6
-  link6.position(475, 460);
-  link6.style("font-size", "10px");
+  link6.position(1086, 828);
+  link6.style("font-size", "20px");
   link6.style("text-align", "LEFT");
   link6.style("text-style", "NORMAL");
   link6.style("color", "black");
@@ -110,10 +110,6 @@ function draw() {
   link6.style("font-family", "zumme");
   noStroke();
   fill("#FDE9BD");
-  rect(475, 315, 190, 140);
-  image(img6, 475, 325, 190, 130);
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  rect(1086, 567, 434, 252);
+  image(img6, 1086, 585, 434, 234);
 }
