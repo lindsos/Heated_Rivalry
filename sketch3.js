@@ -14,12 +14,12 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1600, 900);
   link = createA("index.html", "Return to home");
   for (i = 1; i < 150; i++) {
     lights.push({
-      x: random(700),
-      y: random(500),
+      x: random(1600),
+      y: random(900),
       s: random(1 / 2),
     });
   }
@@ -27,7 +27,7 @@ function setup() {
 
 function draw() {
   background("#163355");
-  image(img20, 0, 0, 700, 500);
+  image(img20, 0, 0, 1600, 900);
   for (i = 1; i <= 4; i++) {}
   for (i = 0; i < lights.length; i++) {
     lights[i].s = (lights[i].s % 5) + 0.15;
@@ -36,10 +36,11 @@ function draw() {
     fill("white");
     ellipse(lights[i].x, lights[i].y, 5);
   }
-  textSize(10);
+  textSize(20);
   textAlign(CENTER);
   fill("white");
   noStroke();
+
   text("Just a bunch", 342, 73);
   text("of very", 342, 83);
   text("decent", 342, 93);
@@ -55,19 +56,16 @@ function draw() {
   text("sunshine.", 460, 210);
   text("And so", 475, 220);
   text("do you.", 485, 230);
-  image(img21, 310, 50, 65, 95);
-  image(img22, 185, 175, 95, 65);
-  image(img23, 435, 150, 75, 95);
-  image(img24, 30, 10, 35, 35);
-  link.position(10, 45);
-  link.style("font-size", "10px");
+
+  image(img21, 709, 90, 149, 171);
+  image(img22, 994, 567, 496, 211);
+  image(img23, 994, 270, 171, 171);
+  image(img24, 69, 18, 80, 63);
+  link.position(23, 81);
+  link.style("font-size", "20px");
   link.style("text-align", "CENTER");
   link.style("text-style", "NORMAL");
   link.style("color", "white");
   link.style("text-decoration", "none");
   link.style("font-family", "helvetica-neue-lt-pro");
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
