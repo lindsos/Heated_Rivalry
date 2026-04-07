@@ -22,53 +22,50 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1600, 900);
   link = createA("index.html", "Return to home");
   noLoop();
 }
 
 function draw() {
   background('#D9DDE9');
-  image (img7, 0, 0, 700, 500);
-  image (img8, 0, 310, 200, 190);
-  image (img9, 500, 310, 200, 190);
-  image (img10, 230, 295, 120, 200);
-  image (img11, 360, 275, 120, 220);
-  textSize (12);
+  image (img7, 0, 0, 1600, 900);
+  image (img8, 0, 558, 457, 342);
+  image (img9, 1143, 558, 457, 342);
+  image (img10, 526, 531, 274, 360);
+  image (img11, 823, 495, 274, 396);
+  textSize (24);
   textAlign (CENTER);
   fill ('black');
-  text ('You will not', 120, 190);
-  text ('be so nice', 120, 200);
-  text ('when we beat', 120, 210);
-  text ('you.', 120, 220);
-  text ('Is lie. Liar', 610, 210);
-  text ('told you this.', 610, 220);
-  text ('Is', 360, 135);
-  text ('someone', 360, 145);
-  text ('chasing', 360, 155);
-  text ('you?', 360, 165);
-  image (img12, 75, 165, 95, 95);
-  image (img13, 560, 165, 95, 95);
-  image (img14, 330, 100, 55, 95);
-  image (img15, 30, 10, 35, 35);
-  link.position(10, 45);
-  link.style("font-size", "10px");
-  link.style("text-align", "LEFT");
+  text ('You will not', 274, 342);
+  text ('be so nice', 274, 360);
+  text ('when we beat', 274, 378);
+  text ('you.', 274, 396);
+  text ('Is lie. Liar', 1394, 378);
+  text ('told you this.', 1394, 396);
+  text ('Is', 823, 243);
+  text ('someone', 823, 261);
+  text ('chasing', 823, 279);
+  text ('you?', 823, 297);
+  image (img12, 171, 297, 217, 171);
+  image (img13, 1280, 297, 217, 171);
+  image (img14, 754, 180, 126, 171);
+  image(img15, 61, 18, 80, 63);
+  link.position(15, 81);
+  link.style("font-size", "20px");
+  link.style("text-align", "CENTER");
   link.style("text-style", "NORMAL");
   link.style("color", "black");
   link.style("text-decoration", "none");
   link.style("font-family", "helvetica-neue-lt-pro");
   let x = frameCount;
   fill ('black');
-  ellipse (350, 480, 20, 10);
+  ellipse (800, 864, 46, 18);
 }
+
 function doubleClicked(img10) {
   loop();
 }
 function doubleClicked(img11) {
   loop();
-}
-
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
 }
