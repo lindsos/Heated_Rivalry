@@ -58,8 +58,8 @@ function draw() {
   image(img21, 709, 90, 149, 200);
   image(img22, 423, 315, 217, 117);
   image(img23, 994, 270, 171, 171);
-  image(img24, 69, 18, 80, 63);
-  link.position(23, 81);
+  image(img24, 61, 18, 80, 63);
+  link.position(15, 81);
   link.style("font-size", "20px");
   link.style("text-align", "CENTER");
   link.style("text-style", "NORMAL");
