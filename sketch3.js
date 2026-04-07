@@ -40,26 +40,23 @@ function draw() {
   textAlign(CENTER);
   fill("white");
   noStroke();
-
-  text("Just a bunch", 342, 73);
-  text("of very", 342, 83);
-  text("decent", 342, 93);
-  text("smoothies", 342, 103);
-  text("with", 342, 113);
-  text("deeply", 342, 123);
-  text("stupid", 342, 133);
-  text("names.", 342, 143);
-  text("Blue moon", 230, 210);
-  text("over Brooklyn.", 230, 220);
-  text("He", 460, 190);
-  text("deserves", 460, 200);
-  text("sunshine.", 460, 210);
-  text("And so", 475, 220);
-  text("do you.", 485, 230);
-
+  text("Just a bunch", 782, 236);
+  text("of very", 782, 149);
+  text("decent", 782, 167);
+  text("smoothies", 782, 185);
+  text("with", 782, 203);
+  text("deeply", 782, 221);
+  text("stupid", 782, 239);
+  text("names.", 782, 257);
+  text("Blue moon", 526, 378);
+  text("over Brooklyn.", 526, 396);
+  text("He", 1051, 342);
+  text("deserves", 1051, 360);
+  text("sunshine.", 1051, 378);
+  text("And so", 1086, 396);
+  text("do you.", 1109, 414);
   image(img21, 709, 90, 149, 171);
   image(img22, 423, 315, 217, 117);
-
   image(img23, 994, 270, 171, 171);
   image(img24, 69, 18, 80, 63);
   link.position(23, 81);
