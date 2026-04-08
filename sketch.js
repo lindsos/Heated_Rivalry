@@ -25,7 +25,7 @@ function setup() {
 }
 
 function draw() {
-  background("white");
+  background("#f0eee6");
 
   //title
   textSize(240);
