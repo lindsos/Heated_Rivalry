@@ -42,13 +42,13 @@ function draw() {
   text("you.", 274, 396);
   text("Is lie. Liar", 1394, 378);
   text("told you this.", 1394, 396);
-  text("Is", 823, 243);
-  text("someone", 823, 261);
-  text("chasing", 823, 279);
-  text("you?", 823, 297);
+  text("Is", 820, 243);
+  text("someone", 820, 261);
+  text("chasing", 820, 279);
+  text("you?", 820, 297);
   image(img12, 171, 297, 217, 171);
   image(img13, 1280, 297, 217, 171);
-  image(img14, 754, 180, 126, 171);
+  image(img14, 769, 180, 100, 171);
   image(img15, 61, 18, 80, 63);
   link.position(15, 81);
   link.style("font-size", "20px");
