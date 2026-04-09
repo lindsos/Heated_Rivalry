@@ -22,6 +22,12 @@ function setup() {
   link4 = createA("index4.html", "EPISODE 4- ROSE");
   link5 = createA("index5.html", "EPISODE 5- ILL BELIEVE IN ANYTHING");
   link6 = createA("index6.html", "EPISODE 6- THE COTTAGE");
+  //link11 = createA(
+  //link22 = createA(
+  //link33 = createA(
+  //link44 = createA(
+  //link55 = createA(
+  //link66 = createA(
 }
 
 function draw() {
@@ -36,7 +42,7 @@ function draw() {
   textStyle(BOLD);
 
   //episode 1
-  link1.position(57, 486);
+  link1.position(102, 525);
   link1.style("font-size", "20px");
   link1.style("text-align", "LEFT");
   link1.style("text-style", "NORMAL");
@@ -49,7 +55,7 @@ function draw() {
   image(img1, 57, 234, 434, 243);
 
   //episode 2
-  link2.position(571, 486);
+  link2.position(616, 525);
   link2.style("font-size", "20px");
   link2.style("text-align", "LEFT");
   link2.style("text-style", "NORMAL");
@@ -62,7 +68,7 @@ function draw() {
   image(img2, 571, 252, 434, 225);
 
   //episode 3
-  link3.position(1086, 486);
+  link3.position(1131, 525);
   link3.style("font-size", "20px");
   link3.style("text-align", "LEFT");
   link3.style("text-style", "NORMAL");
@@ -75,7 +81,7 @@ function draw() {
   image(img3, 1086, 225, 434, 252);
 
   //episode 4
-  link4.position(57, 828);
+  link4.position(102, 867);
   link4.style("font-size", "20px");
   link4.style("text-align", "LEFT");
   link4.style("text-style", "NORMAL");
@@ -88,7 +94,7 @@ function draw() {
   image(img4, 57, 567, 434, 252);
 
   //episode 5
-  link5.position(571, 828);
+  link5.position(616, 867);
   link5.style("font-size", "20px");
   link5.style("text-align", "LEFT");
   link5.style("text-style", "NORMAL");
@@ -101,7 +107,7 @@ function draw() {
   image(img5, 571, 567, 434, 252);
 
   //episode 6
-  link6.position(1086, 828);
+  link6.position(1131, 867);
   link6.style("font-size", "20px");
   link6.style("text-align", "LEFT");
   link6.style("text-style", "NORMAL");

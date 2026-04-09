@@ -6,7 +6,6 @@ let img11;
 let img12;
 let img13;
 let img14;
-let img15;
 
 function preload() {
   img7 = loadImage("assets/episode_1/episode_1_background.png");
@@ -17,12 +16,12 @@ function preload() {
   img12 = loadImage("assets/episode_1/gif_1.png");
   img13 = loadImage("assets/episode_1/gif_2.png");
   img14 = loadImage("assets/episode_1/gif_3.png");
-  img15 = loadImage("assets/tv_remote.png");
 }
 
 function setup() {
   createCanvas(1600, 900);
-  link = createA("index.html", "Return to home");
+  link1 = createA("index.html", "Return to home");
+  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
   noLoop();
 }
 
@@ -49,14 +48,14 @@ function draw() {
   image(img12, 171, 297, 217, 171);
   image(img13, 1280, 297, 217, 171);
   image(img14, 769, 180, 100, 171);
-  image(img15, 61, 18, 80, 63);
-  link.position(15, 81);
-  link.style("font-size", "20px");
-  link.style("text-align", "CENTER");
-  link.style("text-style", "NORMAL");
-  link.style("color", "black");
-  link.style("text-decoration", "none");
-  link.style("font-family", "helvetica-neue-lt-pro");
+  link1.position(60, 130);
+  link11.position (61, 18, 80, 63);
+  link1.style("font-size", "20px");
+  link1.style("text-align", "CENTER");
+  link1.style("text-style", "NORMAL");
+  link1.style("color", "black");
+  link1.style("text-decoration", "none");
+  link1.style("font-family", "helvetica-neue-lt-pro");
   let x = frameCount;
   fill("black");
   ellipse(800, 864, 46, 18);

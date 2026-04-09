@@ -1,7 +1,6 @@
 let img16;
 let img17;
 let img18;
-let img19;
 var backgrounds = [];
 let index = 0;
 
@@ -16,7 +15,8 @@ function preload() {
 
 function setup() {
   createCanvas(1600, 900);
-  link = createA("index.html", "Return to home");
+  link1 = createA("index.html", "Return to home");
+  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
 }
 
 function draw() {
@@ -38,14 +38,13 @@ function draw() {
   image(img16, 1154, 135, 251, 108);
   image(img17, 171, 135, 217, 126);
   image(img18, 720, 720, 263, 126);
-  image(img19, 61, 18, 80, 63);
-  link.position(15, 81);
-  link.style("font-size", "20px");
-  link.style("text-align", "CENTER");
-  link.style("text-style", "NORMAL");
-  link.style("color", "white");
-  link.style("text-decoration", "none");
-  link.style("font-family", "helvetica-neue-lt-pro");
+  link1.position(60, 130);
+  link1.style("font-size", "20px");
+  link1.style("text-align", "CENTER");
+  link1.style("text-style", "NORMAL");
+  link1.style("color", "white");
+  link1.style("text-decoration", "none");
+  link1.style("font-family", "helvetica-neue-lt-pro");
 }
 
 function mousePressed() {

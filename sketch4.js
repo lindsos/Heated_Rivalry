@@ -2,7 +2,6 @@ let img25;
 let img26;
 let img27;
 let img28;
-let img29;
 //var All_the_Things_She_Said;
 
 function preload() {
@@ -10,7 +9,6 @@ function preload() {
   img26 = loadImage('assets/episode_4/gif_10.png');
   //img27 = loadImage('assets/episode_4/gif_11.png');
   img28 = loadImage('assets/episode_4/gif_12.png');
-  img29 = loadImage ('assets/tv_remote.png');
   //All_the_Things_She_Said = loadSound("assets/episode_4/All_The_Things_She_Said_Heated_Rivalry_Version_tATu_Harrison.mp3");
 }
 
@@ -38,8 +36,7 @@ function draw() {
   image (img26, 949, 540, 240, 135);
   //image (img27, 200, 175, 95, 65);
   image (img28, 1200, 477, 171, 171);
-  image(img29, 61, 18, 80, 63);
-  link.position(15, 81);
+  link.position(60, 130);
   link.style("font-size", "20px");
   link.style("text-align", "CENTER");
   link.style("text-style", "NORMAL");

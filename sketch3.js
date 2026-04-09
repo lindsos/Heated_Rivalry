@@ -2,7 +2,6 @@ let img20;
 let img21;
 let img22;
 let img23;
-let img24;
 let lights = [];
 
 function preload() {
@@ -10,12 +9,12 @@ function preload() {
   img21 = loadImage("assets/episode_3/gif_7.png");
   img22 = loadImage("assets/episode_3/gif_8.png");
   img23 = loadImage("assets/episode_3/gif_9.png");
-  img24 = loadImage("assets/tv_remote.png");
 }
 
 function setup() {
   createCanvas(1600, 900);
   link = createA("index.html", "Return to home");
+  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
   for (i = 1; i < 150; i++) {
     lights.push({
       x: random(1600),
@@ -58,8 +57,7 @@ function draw() {
   image(img21, 709, 90, 149, 200);
   image(img22, 423, 315, 217, 117);
   image(img23, 994, 270, 171, 171);
-  image(img24, 61, 18, 80, 63);
-  link.position(15, 81);
+  link.position(60, 130);
   link.style("font-size", "20px");
   link.style("text-align", "CENTER");
   link.style("text-style", "NORMAL");
