@@ -8,7 +8,6 @@ function preload() {
   img16 = loadImage("assets/episode_2/gif_4.png");
   img17 = loadImage("assets/episode_2/gif_5.png");
   img18 = loadImage("assets/episode_2/gif_6.png");
-  img19 = loadImage("assets/tv_remote.png");
   backgrounds[0] = loadImage("assets/episode_2/episode_2_background.png");
   backgrounds[1] = loadImage("assets/episode_2/episode_2_background_2.png");
 }
@@ -39,6 +38,8 @@ function draw() {
   image(img17, 171, 135, 217, 126);
   image(img18, 720, 720, 263, 126);
   link1.position(60, 130);
+  link11.position (70, 18);
+  link11.style ('transform', 'scale(0.5)');
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");

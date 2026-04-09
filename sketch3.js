@@ -57,11 +57,13 @@ function draw() {
   image(img21, 709, 90, 149, 200);
   image(img22, 423, 315, 217, 117);
   image(img23, 994, 270, 171, 171);
-  link.position(60, 130);
-  link.style("font-size", "20px");
-  link.style("text-align", "CENTER");
-  link.style("text-style", "NORMAL");
-  link.style("color", "white");
-  link.style("text-decoration", "none");
-  link.style("font-family", "helvetica-neue-lt-pro");
+  link1.position(60, 130);
+  link11.position (70, 18);
+  link11.style ('transform', 'scale(0.5)');
+  link1.style("font-size", "20px");
+  link1.style("text-align", "CENTER");
+  link1.style("text-style", "NORMAL");
+  link1.style("color", "white");
+  link1.style("text-decoration", "none");
+  link1.style("font-family", "helvetica-neue-lt-pro");
 }

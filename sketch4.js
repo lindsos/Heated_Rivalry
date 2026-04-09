@@ -16,6 +16,7 @@ function preload() {
 function setup() {
   createCanvas(1600, 900);
   link = createA("index.html", "Return to home");
+  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
 }
 
 function draw() {
@@ -36,13 +37,15 @@ function draw() {
   image (img26, 949, 540, 240, 135);
   //image (img27, 200, 175, 95, 65);
   image (img28, 1200, 477, 171, 171);
-  link.position(60, 130);
-  link.style("font-size", "20px");
-  link.style("text-align", "CENTER");
-  link.style("text-style", "NORMAL");
-  link.style("color", "white");
-  link.style("text-decoration", "none");
-  link.style("font-family", "helvetica-neue-lt-pro");
+  link1.position(60, 130);
+  link11.position (70, 18);
+  link11.style ('transform', 'scale(0.5)');
+  link1.style("font-size", "20px");
+  link1.style("text-align", "CENTER");
+  link1.style("text-style", "NORMAL");
+  link1.style("color", "white");
+  link1.style("text-decoration", "none");
+  link1.style("font-family", "helvetica-neue-lt-pro");
 
   //if (mouseIsPressed) {
     //if (All_the_Things_She_Said.isPlaying() == false) {

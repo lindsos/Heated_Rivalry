@@ -49,7 +49,8 @@ function draw() {
   image(img13, 1280, 297, 217, 171);
   image(img14, 769, 180, 100, 171);
   link1.position(60, 130);
-  link11.position (61, 18, 80, 63);
+  link11.position (70, 18);
+  link11.style ('transform', 'scale(0.5)');
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");
