@@ -16,6 +16,7 @@ function setup() {
   createCanvas(1600, 900);
   link1 = createA("index.html", "Return to home");
   link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
+  cursor('assets/HR.png');
 }
 
 function draw() {

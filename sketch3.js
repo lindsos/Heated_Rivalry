@@ -13,8 +13,12 @@ function preload() {
 
 function setup() {
   createCanvas(1600, 900);
-  link = createA("index.html", "Return to home");
-  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
+  link1 = createA("index.html", "Return to home");
+  link11 = createA(
+    "index.html",
+    '<img src="assets/tv_remote.png", alt="tv_remote">',
+  );
+  cursor('assets/HR.png');
   for (i = 1; i < 150; i++) {
     lights.push({
       x: random(1600),
@@ -58,8 +62,8 @@ function draw() {
   image(img22, 423, 315, 217, 117);
   image(img23, 994, 270, 171, 171);
   link1.position(60, 130);
-  link11.position (70, 18);
-  link11.style ('transform', 'scale(0.5)');
+  link11.position(70, 18);
+  link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");

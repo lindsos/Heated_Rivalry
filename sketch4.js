@@ -15,8 +15,12 @@ function preload() {
 
 function setup() {
   createCanvas(1600, 900);
-  link = createA("index.html", "Return to home");
-  link11 = createA('index.html', '<img src="assets/tv_remote.png", alt="tv_remote">');
+  link1 = createA("index.html", "Return to home");
+  link11 = createA(
+    "index.html",
+    '<img src="assets/tv_remote.png", alt="tv_remote">',
+  );
+  cursor('assets/HR.png');
 }
 
 function draw() {
@@ -38,12 +42,12 @@ function draw() {
   //image (img27, 200, 175, 95, 65);
   image (img28, 1200, 477, 171, 171);
   link1.position(60, 130);
-  link11.position (70, 18);
-  link11.style ('transform', 'scale(0.5)');
+  link11.position(70, 18);
+  link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");
-  link1.style("color", "white");
+  link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
