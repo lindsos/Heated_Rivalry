@@ -5,13 +5,12 @@ let img28;
 //var All_the_Things_She_Said;
 
 function preload() {
-  img25 = loadImage('/assets/episode_4/episode_4_background.png');
-  img26 = loadImage('assets/episode_4/gif_10.png');
-  img27 = loadImage('assets/episode_4/gif_11.png');
-  img28 = loadImage('assets/episode_4/gif_12.png');
+  img25 = loadImage("/assets/episode_4/episode_4_background.png");
+  img26 = loadImage("assets/episode_4/gif_10.png");
+  img27 = loadImage("assets/episode_4/gif_11.png");
+  img28 = loadImage("assets/episode_4/gif_12.png");
   //All_the_Things_She_Said = loadSound("assets/episode_4/All_The_Things_She_Said_Heated_Rivalry_Version_tATu_Harrison.mp3");
 }
-
 
 function setup() {
   createCanvas(1600, 900);
@@ -20,27 +19,27 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  cursor('assets/HR.png');
+  cursor("assets/HR.png");
 }
 
 function draw() {
   background("#F5FDFF");
-  image (img25, 0, 0, 1600, 900);
-  textSize (24);
-  textAlign (CENTER);
-  fill ('black');
-  text('You want to make', 1080, 648);
-  text('me tuna melt?', 1080, 666);
-  fill ('white');
-  text('They say', 910, 565);
-  text('youre', 910, 583);
-  text('boring too.', 910, 601);
-  text('Have a fry,', 1291, 531);
-  text('Shane', 1291, 549);
-  text('Hollander.', 1291, 567);
-  image (img26, 980, 540, 240, 135);
-  image (img27, 850, 545, 125, 171);
-  image (img28, 1200, 477, 171, 171);
+  image(img25, 0, 0, 1600, 900);
+  textSize(24);
+  textAlign(CENTER);
+  fill("black");
+  text("You want to make", 1080, 648);
+  text("me tuna melt?", 1080, 666);
+  fill("white");
+  text("They say", 910, 565);
+  text("youre", 910, 583);
+  text("boring too.", 910, 601);
+  text("Have a fry,", 1291, 531);
+  text("Shane", 1291, 549);
+  text("Hollander.", 1291, 567);
+  image(img26, 980, 540, 240, 135);
+  image(img27, 850, 545, 125, 171);
+  image(img28, 1200, 477, 171, 171);
   link1.position(60, 130);
   link11.position(70, 18);
   link11.style("transform", "scale(0.5)");
@@ -52,9 +51,9 @@ function draw() {
   link1.style("font-family", "helvetica-neue-lt-pro");
 
   //if (mouseIsPressed) {
-    //if (All_the_Things_She_Said.isPlaying() == false) {
-      //console.log("play!");
-      //All_the_Things_She_Said.play();
-    //}
+  //if (All_the_Things_She_Said.isPlaying() == false) {
+  //console.log("play!");
+  //All_the_Things_She_Said.play();
+  //}
   //}
 }
