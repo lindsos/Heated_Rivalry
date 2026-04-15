@@ -7,22 +7,22 @@ function setup() {
   link5 = createA("index5.html", "EPISODE 5- ILL BELIEVE IN ANYTHING");
   link6 = createA("index6.html", "EPISODE 6- THE COTTAGE");
   link11 = createA(
-    "index.html",
+    "index1.html",
     '<img src="assets/episode_1/episode_1.png", alt="episode_1">',);
   link22 = createA(
-    "index.html",
+    "index2.html",
     '<img src="assets/episode_2/episode_2_background.png", alt="episode_2_background">',);
   link33 = createA(
-    "index.html",
+    "index3.html",
     '<img src="assets/episode_3/episode_3_background.png", alt="episode_3_background">',);
   link44 = createA(
-    "index.html",
+    "index4.html",
     '<img src="assets/episode_4/episode_4_background.png", alt="episode_4_background">',);
   link55 = createA(
-    "index.html",
+    "index5.html",
     '<img src="assets/episode_5/episode_5_background.png", alt="episode_5_background">',);
   link66 = createA(
-    "index.html",
+    "index6.html",
     '<img src="assets/episode_6/episode_6_background.png", alt="episode_6_background">',);
   cursor("assets/HR.png");
 }
