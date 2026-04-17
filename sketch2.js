@@ -25,22 +25,9 @@ function setup() {
 function draw() {
   background("#111C45");
   image(backgrounds[index], 0, 135, 1600, 765);
-  textSize(24);
-  textAlign(CENTER);
-  fill("white");
-  text("Never in life have", 1280, 180);
-  text("I blushed, Russians", 1280, 198);
-  text("do not do this.", 1280, 216);
-  text("You will", 263, 198);
-  text("murder me.", 263, 216);
-  text("Mr. Business Man,", 834, 792);
-  text("Mr. Landlord.", 834, 810);
-  noStroke();
-  fill("#111C45");
-  rect(1154, 135, 251, 108);
-  image(img16, 1154, 135, 251, 108);
-  image(img17, 171, 135, 217, 126);
-  image(img18, 720, 720, 263, 126);
+  image(img16, 1154, 135);
+  image(img17, 171, 135);
+  image(img18, 720, 720);
   link1.position(60, 130);
   link11.position(70, 18);
   link11.style("transform", "scale(0.5)");
