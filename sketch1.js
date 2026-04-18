@@ -27,23 +27,24 @@ function setup() {
   link1 = createA("index.html", "Return to home");
   link11 = createA(
     "index.html",
-    '<img src="assets/tv_remote.png", alt="tv_remote">',);
+    '<img src="assets/tv_remote.png", alt="tv_remote">',
+  );
   noLoop();
-  cursor('assets/HR.png');
+  cursor("assets/HR.png");
 }
 
 function draw() {
   background("#D9DDE9");
   image(img01, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
-  image(img02, 0 * ratio, 558 * ratio);
-  image(img03, 1143 * ratio, 558 * ratio);
-  image(img04, 526 * ratio, 531 * ratio);
-  image(img05, 823 * ratio, 495 * ratio);
-  image(img1, 171 * ratio, 297 * ratio);
-  image(img2, 1280 * ratio, 297 * ratio);
-  image(img3, 769 * ratio, 180 * ratio);
+  image(img02, 0 * ratio, 700 * ratio);
+  image(img03, 1050 * ratio, 700 * ratio);
+  image(img04, 450 * ratio, 650 * ratio);
+  image(img05, 750 * ratio, 615 * ratio);
+  image(img1, 135 * ratio, 297 * ratio);
+  image(img2, 1100 * ratio, 280 * ratio);
+  image(img3, 675 * ratio, 200 * ratio);
   link1.position(5 * ratio, 0 * ratio);
-  link11.position(0 *ratio, 0 * ratio);
+  link11.position(0 * ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
@@ -53,7 +54,7 @@ function draw() {
   link1.style("font-family", "helvetica-neue-lt-pro");
   let x = frameCount;
   fill("black");
-  ellipse(800 * ratio, 864 * ratio, 46 * ratio, 18 * ratio);
+  ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
 }
 
 function doubleClicked(img10) {
