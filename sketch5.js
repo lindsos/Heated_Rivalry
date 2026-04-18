@@ -19,7 +19,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  cursor('assets/HR.png');
+  //cursor('assets/HR.png');
 }
 
 function draw() {
@@ -57,6 +57,12 @@ function draw() {
   ellipse(xpos +1020, 50 * ratio, 100 * ratio, 50 * ratio);
   ellipse(xpos +1040, 70 * ratio, 100 * ratio, 50 * ratio);
   bounce(); 
+
+  frameRate(12);
+  textSize(24);
+  text("X: "+mouseX, 200, 100);
+  text("Y: "+mouseY, 50, 200);
+
 }
 
 function bounce() {

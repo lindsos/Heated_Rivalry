@@ -1,5 +1,10 @@
+let ratio;
+
 function setup() {
-  createCanvas(1600, 900);
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  createCanvas(design_w * ratio, design_h * ratio);
   link1 = createA("index1.html", "EPISODE 1- ROOKIES");
   link2 = createA("index2.html", "EPISODE 2- OLYMPIANS");
   link3 = createA("index3.html", "EPISODE 3- HUNTER");
@@ -34,7 +39,7 @@ function draw() {
   textSize(240);
   textAlign(CENTER);
   fill("black");
-  text("HEATED RIVALRY", 800, 189);
+  text("HEATED RIVALRY", 635, 189);
   textFont("zuume-cut");
   textStyle(BOLD);
 
@@ -48,7 +53,7 @@ function draw() {
   link1.style("font-family", "zumme");
   noStroke();
   fill("#D9DDE9");
-  rect(71, 225, 427, 281);
+  rect(40, 265, 363, 231);
   link11.position(-280, 11);
   link11.style("transform", "scale(0.35)");
 
@@ -62,7 +67,7 @@ function draw() {
   link2.style("font-family", "zumme");
   noStroke();
   fill("#111C45");
-  rect(585, 225, 427, 281);
+  rect(448, 265, 363, 231);
   link22.position(241, 68);
   link22.style("transform", "scale(0.35)");
 
@@ -76,7 +81,7 @@ function draw() {
   link3.style("font-family", "zumme");
   noStroke();
   fill("#163355");
-  rect(1100, 224, 429, 282);
+  rect(856, 265, 363, 231);
   link33.position(748, 12.5);
   link33.style("transform", "scale(0.35)");
 
@@ -90,7 +95,7 @@ function draw() {
   link4.style("font-family", "zumme");
   noStroke();
   fill("#F5FDFF");
-  rect(71, 567, 427, 274);
+  rect(40, 587, 363, 231);
   link44.position(-282, 352);
   link44.style("transform", "scale(0.35)");
 
@@ -104,7 +109,7 @@ function draw() {
   link5.style("font-family", "zumme");
   noStroke();
   fill("#A3DEF8");
-  rect(585, 567, 427, 274);
+  rect(448, 587, 363, 231);
   link55.position(232, 350);
   link55.style("transform", "scale(0.35)");
 
@@ -118,7 +123,14 @@ function draw() {
   link6.style("font-family", "zumme");
   noStroke();
   fill("#FDE9BD");
-  rect(1100, 567, 427, 274);
+  rect(856, 587, 363, 231);
   link66.position(750, 351);
   link66.style("transform", "scale(0.35)");
+}
+
+function windowResized() {
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  resizeCanvas(design_w * ratio, design_h * ratio);
 }

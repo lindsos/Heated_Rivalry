@@ -43,9 +43,59 @@ function draw() {
     fill("white");
     ellipse(lights[i].x, lights[i].y, 5);
   }
+  noStroke();
   image(img7, 650 * ratio, 90 * ratio);
+      if (mouseX > 568 && mouseX < 695 && mouseY > 80 && mouseY < 265) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(560, 75, 140, 195);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("Just a bunch", 630, 145);
+    text("of very decent", 630, 165);
+    text("smoothies with", 630, 185);
+    text("deeply stupid.", 630, 205);
+  }
+
   image(img8, 403 * ratio, 350 * ratio);
+      if (mouseX > 350 && mouseX < 575 && mouseY > 310 && mouseY < 440) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(345, 300, 230, 152);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("Blue moon", 460, 365);
+    text("over Brooklyn.", 460, 385);
+  }
+
+
   image(img9, 875 * ratio, 270 * ratio);
+      if (mouseX > 765 && mouseX < 930 && mouseY > 235 && mouseY < 450) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(762, 235, 170, 220);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("He deserves", 850, 315);
+    text("sunshine. And", 850, 335);
+    text("so do you.", 850, 355);
+  }
+
   link1.position(5 * ratio, 0 * ratio);
   link11.position(0 *ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
@@ -55,6 +105,12 @@ function draw() {
   link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
+
+  //frameRate(12);
+  //textSize(24);
+  //text("X: "+mouseX, 200, 100);
+  //text("Y: "+mouseY, 50, 200);
+
 }
 
 function windowResized() {

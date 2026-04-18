@@ -30,8 +30,8 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  noLoop();
-  //cursor("assets/HR.png");
+  //noLoop();
+  cursor("assets/HR.png");
 }
 
 function draw() {
@@ -49,13 +49,13 @@ function draw() {
   }
   if (isHovering) {
     fill(0, 150);
-    rect(135, 280, 170, 80);
+    rect(115, 258, 210, 180);
     fill('white')
     textSize(20);
     textAlign(CENTER, CENTER);
-    text("You will not", 220, 300);
-    text("be so nice when", 220, 320);
-    text("we beat you.", 220, 340);
+    text("You will not", 220, 330);
+    text("be so nice when", 220, 350);
+    text("we beat you.", 220, 370);
   }
 
   image(img2, 1100 * ratio, 280 * ratio);
@@ -66,7 +66,7 @@ function draw() {
   }
   if (isHovering) {
     fill(0, 150);
-    rect(50, 250, 170, 80);
+    rect(965, 244, 210, 210);
     fill('white')
     textSize(20);
     textAlign(CENTER, CENTER);
@@ -82,14 +82,14 @@ function draw() {
   }
   if (isHovering) {
     fill(0, 150);
-    rect(50, 250, 300, 100);
+    rect(594, 175, 101, 190);
     fill('white')
     textSize(20);
     textAlign(CENTER, CENTER);
-    text("Is", 645, 250);
-    text("someone", 645, 270);
-    text("chasing", 645, 290);
-    text("you?", 645, 310);
+    text("Is", 645, 240);
+    text("someone", 645, 260);
+    text("chasing", 645, 280);
+    text("you?", 645, 300);
   }
 
   link1.position(5 * ratio, 0 * ratio);
@@ -101,23 +101,17 @@ function draw() {
   link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
-  let x = frameCount;
+  //let x = frameCount;
   fill("black");
   ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
-
-  frameRate(12);
-  textSize(24);
-  text("X: "+mouseX, 200, 100);
-  text("Y: "+mouseY, 50, 200);
-
 }
 
-function doubleClicked(img10) {
-  loop();
-}
-function doubleClicked(img11) {
-  loop();
-}
+//function doubleClicked(img10) {
+  //loop();
+//}
+//function doubleClicked(img11) {
+  //loop();
+//}
 
 function windowResized() {
   const design_w = 1440;
@@ -125,3 +119,8 @@ function windowResized() {
   ratio = min(windowWidth / design_w, windowHeight / design_h);
   resizeCanvas(design_w * ratio, design_h * ratio);
 }
+
+  //frameRate(12);
+  //textSize(24);
+ // text("X: "+mouseX, 200, 100);
+  //text("Y: "+mouseY, 50, 200);

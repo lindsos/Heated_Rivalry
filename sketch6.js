@@ -20,7 +20,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  cursor('assets/HR.png');
+  //cursor('assets/HR.png');
 }
 
 function draw() {
@@ -36,6 +36,10 @@ function draw() {
     redVal += 4;
     greenVal += 1;
   }
+  frameRate(12);
+  textSize(24);
+  text("X: "+mouseX, 200, 100);
+  text("Y: "+mouseY, 50, 200);
 }
   console.log(sunHeight);
   image(img09, 0 * ratio, 77 * ratio, 1440 * ratio, 947 * ratio);
