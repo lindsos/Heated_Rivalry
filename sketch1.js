@@ -1,4 +1,5 @@
 let ratio;
+let isHovering = false;
 let img01;
 let img02;
 let img03;
@@ -30,7 +31,7 @@ function setup() {
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
   noLoop();
-  cursor("assets/HR.png");
+  //cursor("assets/HR.png");
 }
 
 function draw() {
@@ -41,8 +42,56 @@ function draw() {
   image(img04, 450 * ratio, 650 * ratio);
   image(img05, 750 * ratio, 615 * ratio);
   image(img1, 135 * ratio, 297 * ratio);
+  if (mouseX > 120 && mouseX < 260 && mouseY > 320 && mouseY < 435) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(135, 280, 170, 80);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("You will not", 220, 300);
+    text("be so nice when", 220, 320);
+    text("we beat you.", 220, 340);
+  }
+
   image(img2, 1100 * ratio, 280 * ratio);
+  if (mouseX > 975 && mouseX < 1170 && mouseY > 245 && mouseY < 550) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(50, 250, 170, 80);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("Is lie. Liar", 1075, 340);
+    text("told you this.", 1075, 360);
+  }
+
   image(img3, 675 * ratio, 200 * ratio);
+    if (mouseX > 590 && mouseX < 693 && mouseY > 175 && mouseY < 365) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(50, 250, 300, 100);
+    fill('white')
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("Is", 645, 250);
+    text("someone", 645, 270);
+    text("chasing", 645, 290);
+    text("you?", 645, 310);
+  }
+
   link1.position(5 * ratio, 0 * ratio);
   link11.position(0 * ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
@@ -55,6 +104,12 @@ function draw() {
   let x = frameCount;
   fill("black");
   ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
+
+  frameRate(12);
+  textSize(24);
+  text("X: "+mouseX, 200, 100);
+  text("Y: "+mouseY, 50, 200);
+
 }
 
 function doubleClicked(img10) {
