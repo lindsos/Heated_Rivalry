@@ -1,18 +1,22 @@
-let img20;
-let img21;
-let img22;
-let img23;
+let ratio;
+let img06;
+let img7;
+let img8;
+let img9;
 let lights = [];
 
 function preload() {
-  img20 = loadImage("assets/episode_3/episode_3_background.png");
-  img21 = loadImage("assets/episode_3/gif_7.png");
-  img22 = loadImage("assets/episode_3/gif_8.png");
-  img23 = loadImage("assets/episode_3/gif_9.png");
+  img06 = loadImage("assets/episode_3/episode_3_background.png");
+  img7 = loadImage("assets/episode_3/gif_7.png");
+  img8 = loadImage("assets/episode_3/gif_8.png");
+  img9 = loadImage("assets/episode_3/gif_9.png");
 }
 
 function setup() {
-  createCanvas(1600, 900);
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  createCanvas(design_w * ratio, design_h * ratio);
   link1 = createA("index.html", "Return to home");
   link11 = createA(
     "index.html",
@@ -21,8 +25,8 @@ function setup() {
   cursor('assets/HR.png');
   for (i = 1; i < 150; i++) {
     lights.push({
-      x: random(1600),
-      y: random(900),
+      x: random(1440),
+      y: random(1024),
       s: random(1 / 2),
     });
   }
@@ -30,7 +34,7 @@ function setup() {
 
 function draw() {
   background("#163355");
-  image(img20, 0, 0, 1600, 900);
+  image(img06, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   for (i = 1; i <= 4; i++) {}
   for (i = 0; i < lights.length; i++) {
     lights[i].s = (lights[i].s % 5) + 0.15;
@@ -39,16 +43,23 @@ function draw() {
     fill("white");
     ellipse(lights[i].x, lights[i].y, 5);
   }
-  image(img21, 709, 90);
-  image(img22, 423, 315);
-  image(img23, 994, 270);
-  link1.position(60, 130);
-  link11.position(70, 18);
+  image(img7, 650 * ratio, 90 * ratio);
+  image(img8, 403 * ratio, 350 * ratio);
+  image(img9, 875 * ratio, 270 * ratio);
+  link1.position(5 * ratio, 0 * ratio);
+  link11.position(0 *ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");
-  link1.style("color", "white");
+  link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
+}
+
+function windowResized() {
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  resizeCanvas(design_w * ratio, design_h * ratio);
 }

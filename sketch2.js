@@ -1,19 +1,23 @@
-let img16;
-let img17;
-let img18;
+let ratio;
+let img4;
+let img5;
+let img6;
 var backgrounds = [];
 let index = 0;
 
 function preload() {
-  img16 = loadImage("assets/episode_2/gif_4.png");
-  img17 = loadImage("assets/episode_2/gif_5.png");
-  img18 = loadImage("assets/episode_2/gif_6.png");
+  img4 = loadImage("assets/episode_2/gif_4.png");
+  img5 = loadImage("assets/episode_2/gif_5.png");
+  img6 = loadImage("assets/episode_2/gif_6.png");
   backgrounds[0] = loadImage("assets/episode_2/episode_2_background.png");
   backgrounds[1] = loadImage("assets/episode_2/episode_2_background_2.png");
 }
 
 function setup() {
-  createCanvas(1600, 900);
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  createCanvas(design_w * ratio, design_h * ratio);
   link1 = createA("index.html", "Return to home");
   link11 = createA(
     "index.html",
@@ -24,17 +28,18 @@ function setup() {
 
 function draw() {
   background("#111C45");
-  image(backgrounds[index], 0, 135, 1600, 765);
-  image(img16, 1154, 135);
-  image(img17, 171, 135);
-  image(img18, 720, 720);
-  link1.position(60, 130);
-  link11.position(70, 18);
+  image(backgrounds[index], 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
+  image(img4, 1154 * ratio, 110 * ratio);
+  image(img5, 171 * ratio, 75 * ratio);
+  image(img6, 650 * ratio, 800 * ratio);
+  link1.position(60 * ratio, 130 * ratio);
+  link1.position(5 * ratio, 0 * ratio);
+  link11.position(0 *ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");
-  link1.style("color", "white");
+  link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 }
@@ -44,4 +49,11 @@ function mousePressed() {
   if (index == backgrounds.length) {
     index = 0;
   }
+}
+
+function windowResized() {
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  resizeCanvas(design_w * ratio, design_h * ratio);
 }

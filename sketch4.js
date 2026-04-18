@@ -1,19 +1,23 @@
-let img25;
-let img26;
-let img27;
-let img28;
-//var All_the_Things_She_Said;
+let ratio;
+let img07;
+let img10;
+let img11;
+let img12;
+var All_the_Things_She_Said;
 
 function preload() {
-  img25 = loadImage("/assets/episode_4/episode_4_background.png");
-  img26 = loadImage("assets/episode_4/gif_10.png");
-  img27 = loadImage("assets/episode_4/gif_11.png");
-  img28 = loadImage("assets/episode_4/gif_12.png");
-  //All_the_Things_She_Said = loadSound("assets/episode_4/All_The_Things_She_Said_Heated_Rivalry_Version_tATu_Harrison.mp3");
+  img07 = loadImage("/assets/episode_4/episode_4_background.png");
+  img10 = loadImage("assets/episode_4/gif_10.png");
+  img11 = loadImage("assets/episode_4/gif_11.png");
+  img12 = loadImage("assets/episode_4/gif_12.png");
+  All_the_Things_She_Said = loadSound("assets/episode_4/all_the_things_she_said_heated_rivalry_version_tatu_harrison.mp3");
 }
 
 function setup() {
-  createCanvas(1600, 900);
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  createCanvas(design_w * ratio, design_h * ratio);
   link1 = createA("index.html", "Return to home");
   link11 = createA(
     "index.html",
@@ -24,12 +28,12 @@ function setup() {
 
 function draw() {
   background("#F5FDFF");
-  image(img25, 0, 0, 1600, 900);
-  image(img26, 980, 540);
-  image(img27, 850, 545);
-  image(img28, 1200, 477);
-  link1.position(60, 130);
-  link11.position(70, 18);
+  image(img07, 0 * ratio, 0 *ratio, 1440 * ratio, 1024 *ratio);
+  image(img10, 910 * ratio, 620 * ratio);
+  image(img11, 770 * ratio, 585 * ratio);
+  image(img12, 1150 * ratio, 540 * ratio);
+  link1.position(5 * ratio, 0 * ratio);
+  link11.position(0 *ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
@@ -38,10 +42,17 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
-  //if (mouseIsPressed) {
-  //if (All_the_Things_She_Said.isPlaying() == false) {
-  //console.log("play!");
-  //All_the_Things_She_Said.play();
-  //}
-  //}
+  if (mouseIsPressed) {
+  if (All_the_Things_She_Said.isPlaying() == false) {
+  console.log("play!");
+  All_the_Things_She_Said.play();
+  }
+  }
+}
+
+function windowResized() {
+  const design_w = 1440;
+  const design_h = 1024;
+  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  resizeCanvas(design_w * ratio, design_h * ratio);
 }

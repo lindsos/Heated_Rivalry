@@ -9,11 +9,6 @@ body {
 canvas {
   display: block;
   margin: auto;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
 }
 
 body {
@@ -21,31 +16,3 @@ body {
   font-family: zuume-cut, sans-serif;
   font-family: helvetica-neue-lt-pro, sans-serif;
 }
-
- #home_page {
-    background-color: #f0eee6;
-  }
-
-   #episode_1 {
-    background-color: #D9DDE9;
-  }
-
-    #episode_2 {
-    background-color: #111C45;
-  }
-
-    #episode_3 {
-    background-color: #163355;
-  }
-
-    #episode_4 {
-    background-color: #F5FDFF;
-  }
-
-    #episode_5 {
-    background-color: #a2def8;
-  }
-
-    #episode_6 {
-    background-color: #fce8bd;
-  }
