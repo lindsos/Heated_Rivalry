@@ -10,7 +10,9 @@ function preload() {
   img10 = loadImage("assets/episode_4/gif_10.png");
   img11 = loadImage("assets/episode_4/gif_11.png");
   img12 = loadImage("assets/episode_4/gif_12.png");
-  All_the_Things_She_Said = loadSound("assets/episode_4/all_the_things_she_said_heated_rivalry_version_tatu_harrison.mp3");
+  All_the_Things_She_Said = loadSound(
+    "assets/episode_4/all_the_things_she_said_heated_rivalry_version_tatu_harrison.mp3",
+  );
 }
 
 function setup() {
@@ -28,9 +30,9 @@ function setup() {
 
 function draw() {
   background("#F5FDFF");
-  image(img07, 0 * ratio, 0 *ratio, 1440 * ratio, 1024 *ratio);
+  image(img07, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img10, 910 * ratio, 620 * ratio);
-        if (mouseX > 800 && mouseX < 1010 && mouseY > 545 && mouseY < 661) {
+  if (mouseX > 800 && mouseX < 1010 && mouseY > 545 && mouseY < 661) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -38,7 +40,7 @@ function draw() {
   if (isHovering) {
     fill(0, 150);
     rect(795, 540, 220, 125);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("You want to make", 900, 605);
@@ -46,7 +48,7 @@ function draw() {
   }
 
   image(img11, 770 * ratio, 585 * ratio);
-        if (mouseX > 675 && mouseX < 780 && mouseY > 512 && mouseY < 712) {
+  if (mouseX > 675 && mouseX < 780 && mouseY > 512 && mouseY < 712) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -54,7 +56,7 @@ function draw() {
   if (isHovering) {
     fill(0, 150);
     rect(672, 510, 112, 205);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("They say", 730, 595);
@@ -63,7 +65,7 @@ function draw() {
   }
 
   image(img12, 1150 * ratio, 540 * ratio);
-        if (mouseX > 1010 && mouseX < 1140 && mouseY > 470 && mouseY < 645) {
+  if (mouseX > 1010 && mouseX < 1140 && mouseY > 470 && mouseY < 645) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -71,7 +73,7 @@ function draw() {
   if (isHovering) {
     fill(0, 150);
     rect(1005, 470, 140, 180);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("Have a", 1075, 545);
@@ -80,7 +82,7 @@ function draw() {
   }
 
   link1.position(5 * ratio, 0 * ratio);
-  link11.position(0 *ratio, 0 * ratio);
+  link11.position(0 * ratio, 0 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
@@ -90,17 +92,16 @@ function draw() {
   link1.style("font-family", "helvetica-neue-lt-pro");
 
   if (mouseIsPressed) {
-  if (All_the_Things_She_Said.isPlaying() == false) {
-  console.log("play!");
-  All_the_Things_She_Said.play();
-  }
+    if (All_the_Things_She_Said.isPlaying() == false) {
+      console.log("play!");
+      All_the_Things_She_Said.play();
+    }
   }
 
   //frameRate(12);
   //textSize(24);
   //text("X: "+mouseX, 200, 100);
   //text("Y: "+mouseY, 50, 200);
-
 }
 
 function windowResized() {
