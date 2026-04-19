@@ -1,15 +1,15 @@
 let ratio;
-let sunHeight = 1440;
+let sunHeight = 1000;
 let redVal = 0;
 let greenVal = 0;
 let img09;
-//let img16;
+let img16;
 let img17;
 let img18;
 
 function preload() {
   img09 = loadImage('assets/episode_6/episode_6_background.png');
-  //img16 = loadImage('assets/episode_6/gif_16.png);
+  img16 = loadImage('assets/episode_6/gif_16.png');
   img17 = loadImage('assets/episode_6/gif_17.png');
   img18 = loadImage('assets/episode_6/gif_18.png');
 }
@@ -24,7 +24,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  //cursor('assets/HR.png');
+  cursor('assets/HR.png');
 
 }
 
@@ -32,9 +32,9 @@ function draw() {
   background(redVal * ratio, greenVal * ratio, 0 * ratio);
   noStroke();
   fill(255, 135, 5, 60);
-  circle(720 * ratio, sunHeight * ratio, 180 * ratio);
+  circle(870 * ratio, sunHeight * ratio, 180 * ratio);
   fill(255, 100, 0, 100);
-  circle(720 * ratio, sunHeight * ratio, 140 * ratio);
+  circle(870 * ratio, sunHeight * ratio, 140 * ratio);
   if (sunHeight > 130) {
     sunHeight -= 2;
   if (sunHeight < 480) {
@@ -43,8 +43,22 @@ function draw() {
   }
 }
   image(img09, 0 * ratio, 77 * ratio, 1440 * ratio, 947 * ratio);
-  //image (img16, 0 * ratio, 0 * ratio);
-
+  image (img16, 450 * ratio, 175 * ratio);
+    if (mouseX > 395 && mouseX < 565 && mouseY > 150 && mouseY < 325) {
+    isHovering = true;
+  } else {
+    isHovering = false;
+  }
+  if (isHovering) {
+    fill(0, 150);
+    rect(385, 145, 190, 187);
+    fill("white");
+    textSize(20);
+    textAlign(CENTER, CENTER);
+    text("Stupid", 480, 220);
+    text("Canadian", 480, 240);
+    text("wolf bird.", 480, 260);
+  }
 
   image (img17, 145 * ratio, 640 * ratio);
     if (mouseX > 120 && mouseX < 300 && mouseY > 555 && mouseY < 735) {
@@ -93,10 +107,10 @@ function draw() {
   background(0);
   }
 
-  frameRate(12);
-  textSize(24);
-  text("X: "+mouseX, 200, 100);
-  text("Y: "+mouseY, 50, 200);
+  //frameRate(12);
+  //textSize(24);
+  //text("X: "+mouseX, 200, 100);
+  //text("Y: "+mouseY, 50, 200);
 
 }
 
