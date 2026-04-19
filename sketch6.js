@@ -8,10 +8,10 @@ let img17;
 let img18;
 
 function preload() {
-  img09 = loadImage('assets/episode_6/episode_6_background.png');
-  img16 = loadImage('assets/episode_6/gif_16.png');
-  img17 = loadImage('assets/episode_6/gif_17.png');
-  img18 = loadImage('assets/episode_6/gif_18.png');
+  img09 = loadImage("assets/episode_6/episode_6_background.png");
+  img16 = loadImage("assets/episode_6/gif_16.png");
+  img17 = loadImage("assets/episode_6/gif_17.png");
+  img18 = loadImage("assets/episode_6/gif_18.png");
 }
 
 function setup() {
@@ -24,8 +24,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  cursor('assets/HR.png');
-
+  cursor("assets/HR.png");
 }
 
 function draw() {
@@ -37,14 +36,14 @@ function draw() {
   circle(870 * ratio, sunHeight * ratio, 140 * ratio);
   if (sunHeight > 130) {
     sunHeight -= 2;
-  if (sunHeight < 480) {
-    redVal += 4;
-    greenVal += 1;
+    if (sunHeight < 480) {
+      redVal += 4;
+      greenVal += 1;
+    }
   }
-}
   image(img09, 0 * ratio, 77 * ratio, 1440 * ratio, 947 * ratio);
-  image (img16, 450 * ratio, 175 * ratio);
-    if (mouseX > 395 && mouseX < 565 && mouseY > 150 && mouseY < 325) {
+  image(img16, 450 * ratio, 175 * ratio);
+  if (mouseX > 395 && mouseX < 565 && mouseY > 150 && mouseY < 325) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -60,8 +59,8 @@ function draw() {
     text("wolf bird.", 480, 260);
   }
 
-  image (img17, 145 * ratio, 640 * ratio);
-    if (mouseX > 120 && mouseX < 300 && mouseY > 555 && mouseY < 735) {
+  image(img17, 145 * ratio, 640 * ratio);
+  if (mouseX > 120 && mouseX < 300 && mouseY > 555 && mouseY < 735) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -75,9 +74,9 @@ function draw() {
     text("Ya tebya", 193, 635);
     text("lyublyu.", 193, 655);
   }
-  
-  image (img18, 800 * ratio, 825 * ratio);
-    if (mouseX > 700 && mouseX < 875 && mouseY > 720 && mouseY < 885) {
+
+  image(img18, 800 * ratio, 825 * ratio);
+  if (mouseX > 700 && mouseX < 875 && mouseY > 720 && mouseY < 885) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -103,15 +102,14 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
-  if (mouseIsPressed===true && sunHeight === 130) {
-  background(0);
+  if (mouseIsPressed === true && sunHeight === 130) {
+    background(0);
   }
 
   //frameRate(12);
   //textSize(24);
   //text("X: "+mouseX, 200, 100);
   //text("Y: "+mouseY, 50, 200);
-
 }
 
 function windowResized() {
