@@ -51,9 +51,9 @@ function draw() {
   link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "zumme");
-  noStroke();
-  fill("#D9DDE9");
-  rect(40, 265, 363, 231);
+  //noStroke();
+  //fill("#D9DDE9");
+  //rect(40, 265, 363, 231);
   link11.position(-280, 11);
   link11.style("transform", "scale(0.35)");
 
@@ -65,9 +65,9 @@ function draw() {
   link2.style("color", "black");
   link2.style("text-decoration", "none");
   link2.style("font-family", "zumme");
-  noStroke();
-  fill("#111C45");
-  rect(448, 265, 363, 231);
+  //noStroke();
+  //fill("#111C45");
+  //rect(448, 265, 363, 231);
   link22.position(241, 68);
   link22.style("transform", "scale(0.35)");
 
@@ -79,9 +79,9 @@ function draw() {
   link3.style("color", "black");
   link3.style("text-decoration", "none");
   link3.style("font-family", "zumme");
-  noStroke();
-  fill("#163355");
-  rect(856, 265, 363, 231);
+  //noStroke();
+  //fill("#163355");
+  //rect(856, 265, 363, 231);
   link33.position(748, 12.5);
   link33.style("transform", "scale(0.35)");
 
@@ -93,9 +93,9 @@ function draw() {
   link4.style("color", "black");
   link4.style("text-decoration", "none");
   link4.style("font-family", "zumme");
-  noStroke();
-  fill("#F5FDFF");
-  rect(40, 587, 363, 231);
+  //noStroke();
+  //fill("#F5FDFF");
+  //rect(40, 587, 363, 231);
   link44.position(-282, 352);
   link44.style("transform", "scale(0.35)");
 
@@ -107,9 +107,9 @@ function draw() {
   link5.style("color", "black");
   link5.style("text-decoration", "none");
   link5.style("font-family", "zumme");
-  noStroke();
-  fill("#A3DEF8");
-  rect(448, 587, 363, 231);
+  //noStroke();
+  //fill("#A3DEF8");
+  //rect(448, 587, 363, 231);
   link55.position(232, 350);
   link55.style("transform", "scale(0.35)");
 
@@ -121,9 +121,9 @@ function draw() {
   link6.style("color", "black");
   link6.style("text-decoration", "none");
   link6.style("font-family", "zumme");
-  noStroke();
-  fill("#FDE9BD");
-  rect(856, 587, 363, 231);
+  //noStroke();
+  //fill("#FDE9BD");
+  //rect(856, 587, 363, 231);
   link66.position(750, 351);
   link66.style("transform", "scale(0.35)");
 }

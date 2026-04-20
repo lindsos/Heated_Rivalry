@@ -35,7 +35,8 @@ function setup() {
 }
 
 function draw() {
-  background("#D9DDE9");
+  //background("#D9DDE9");
+  
   image(img01, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img02, 0 * ratio, 700 * ratio);
   image(img03, 1050 * ratio, 700 * ratio);
@@ -48,6 +49,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(115, 258, 210, 180);
     fill('white')
@@ -65,6 +67,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(965, 244, 210, 210);
     fill('white')
@@ -81,6 +84,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(594, 175, 101, 190);
     fill('white')
@@ -102,8 +106,13 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
   //let x = frameCount;
-  fill("black");
-  ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
+  //fill("black");
+  //ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
+
+  //frameRate(12);
+  //textSize(24);
+  // text("X: "+mouseX, 200, 100);
+  //text("Y: "+mouseY, 50, 200);
 }
 
 //function doubleClicked(img10) {
@@ -119,8 +128,3 @@ function windowResized() {
   ratio = min(windowWidth / design_w, windowHeight / design_h);
   resizeCanvas(design_w * ratio, design_h * ratio);
 }
-
-  //frameRate(12);
-  //textSize(24);
- // text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);

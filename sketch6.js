@@ -1,5 +1,5 @@
 let ratio;
-let sunHeight = 1000;
+let sunHeight = 100;
 let redVal = 0;
 let greenVal = 0;
 let img09;
@@ -8,7 +8,7 @@ let img17;
 let img18;
 
 function preload() {
-  img09 = loadImage("assets/episode_6/episode_6_background.png");
+  img09 = loadImage("assets/episode_6/episode_6_cottage.png");
   img16 = loadImage("assets/episode_6/gif_16.png");
   img17 = loadImage("assets/episode_6/gif_17.png");
   img18 = loadImage("assets/episode_6/gif_18.png");
@@ -28,14 +28,14 @@ function setup() {
 }
 
 function draw() {
-  background(redVal * ratio, greenVal * ratio, 0 * ratio);
+  background(redVal, greenVal, 130);
   noStroke();
   fill(255, 135, 5, 60);
   circle(870 * ratio, sunHeight * ratio, 180 * ratio);
   fill(255, 100, 0, 100);
   circle(870 * ratio, sunHeight * ratio, 140 * ratio);
-  if (sunHeight > 130) {
-    sunHeight -= 2;
+  if (sunHeight <= 1440) {
+    sunHeight += 2;
     if (sunHeight < 480) {
       redVal += 4;
       greenVal += 1;
@@ -49,6 +49,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(385, 145, 190, 187);
     fill("white");
@@ -66,6 +67,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(120, 552, 147, 187);
     fill("white");
@@ -82,6 +84,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(695, 715, 185, 175);
     fill("white");
@@ -102,9 +105,9 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
-  if (mouseIsPressed === true && sunHeight === 130) {
-    background(0);
-  }
+  //if (mouseIsPressed === true && sunHeight === 1440) {
+    //background(0);
+  //}
 
   //frameRate(12);
   //textSize(24);

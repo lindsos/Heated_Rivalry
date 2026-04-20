@@ -33,7 +33,7 @@ function setup() {
 }
 
 function draw() {
-  background("#163355");
+  //background("#163355");
   image(img06, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   for (i = 1; i <= 4; i++) {}
   for (i = 0; i < lights.length; i++) {
@@ -51,15 +51,19 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(560, 75, 140, 195);
     fill('white')
     textSize(20);
     textAlign(CENTER, CENTER);
-    text("Just a bunch", 630, 145);
-    text("of very decent", 630, 165);
-    text("smoothies with", 630, 185);
-    text("deeply stupid.", 630, 205);
+    text("Just a", 630, 115);
+    text("bunch of", 630, 135);
+    text("very decent", 630, 155);
+    text("smoothies", 630, 175);
+    text("with deeply", 630, 195);
+    text("stupid", 630, 215);
+    text("names.", 630, 235);
   }
 
   image(img8, 403 * ratio, 350 * ratio);
@@ -69,6 +73,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(345, 300, 230, 152);
     fill('white')
@@ -86,6 +91,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(762, 235, 170, 220);
     fill('white')

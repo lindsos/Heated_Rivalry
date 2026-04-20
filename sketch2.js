@@ -16,7 +16,7 @@ function preload() {
 function setup() {
   const design_w = 1440;
   const design_h = 1024;
-  ratio = min(windowWidth / design_w, windowHeight / design_h);
+  ratio = (windowWidth / design_w, windowHeight / design_h);
   createCanvas(design_w * ratio, design_h * ratio);
   link1 = createA("index.html", "Return to home");
   link11 = createA(
@@ -27,7 +27,7 @@ function setup() {
 }
 
 function draw() {
-  background("#111C45");
+  //background("#111C45");
   image(backgrounds[index], 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img4, 1154 * ratio, 110 * ratio);
     if (mouseX > 1010 && mouseX < 1190 && mouseY > 96 && mouseY < 173) {
@@ -36,6 +36,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(1005, 95, 190, 80);
     fill('white')
@@ -53,6 +54,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(150, 65, 218, 145);
     fill('white')
@@ -69,8 +71,9 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
-    rect(570, 702, 216, 145);
+    rect(569.5, 700.5, 218, 145);
     fill('white')
     textSize(20);
     textAlign(CENTER, CENTER);

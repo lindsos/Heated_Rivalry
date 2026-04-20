@@ -29,7 +29,7 @@ function setup() {
 }
 
 function draw() {
-  background("#F5FDFF");
+  //background("#F5FDFF");
   image(img07, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img10, 910 * ratio, 620 * ratio);
   if (mouseX > 800 && mouseX < 1010 && mouseY > 545 && mouseY < 661) {
@@ -38,6 +38,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(795, 540, 220, 125);
     fill("white");
@@ -54,6 +55,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(672, 510, 112, 205);
     fill("white");
@@ -71,6 +73,7 @@ function draw() {
     isHovering = false;
   }
   if (isHovering) {
+    noStroke();
     fill(0, 150);
     rect(1005, 470, 140, 180);
     fill("white");
