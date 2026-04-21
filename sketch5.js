@@ -38,14 +38,16 @@ function draw() {
   if (isHovering) {
     noStroke();
     fill(0, 150);
-    rect(645, 570, 65, 200);
+    rect(646, 570, 65, 200);
     fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
-    text("You're looking", 425, 570);
-    text("very pretty today.", 425, 590);
-
-    //I think I like you maybe a little too much.
+    text("I think", 678, 622);
+    text("I like", 678, 642);
+    text("you", 678, 662);
+    text("maybe", 678, 682);
+    text("a little", 678, 702);
+    text("much.", 678, 722);
   }
 
   image(img14, 375 * ratio, 575 * ratio);
@@ -139,10 +141,10 @@ function draw() {
   ellipse(xpos + 1040, 70 * ratio, 100 * ratio, 50 * ratio);
   bounce();
 
-  frameRate(12);
-  textSize(24);
-  text("X: " + mouseX, 200, 100);
-  text("Y: " + mouseY, 50, 200);
+  //frameRate(12);
+  //textSize(24);
+  //text("X: " + mouseX, 200, 100);
+  //text("Y: " + mouseY, 50, 200);
 }
 
 function bounce() {

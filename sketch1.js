@@ -1,5 +1,6 @@
 let ratio;
 let isHovering = false;
+var puckX = 630;
 let img01;
 let img02;
 let img03;
@@ -29,8 +30,7 @@ function setup() {
   link11 = createA(
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
-  );
-  //noLoop();
+);
   cursor("assets/HR.png");
 }
 
@@ -42,6 +42,10 @@ function draw() {
   image(img03, 1050 * ratio, 700 * ratio);
   image(img04, 450 * ratio, 650 * ratio);
   image(img05, 750 * ratio, 615 * ratio);
+
+  fill ('black');
+  ellipse (630, 875, 40, 20);
+
   image(img1, 135 * ratio, 297 * ratio);
   if (mouseX > 120 && mouseX < 260 && mouseY > 320 && mouseY < 435) {
     isHovering = true;
@@ -105,22 +109,47 @@ function draw() {
   link1.style("color", "black");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
-  //let x = frameCount;
-  //fill("black");
-  //ellipse(710 * ratio, 975 * ratio, 46 * ratio, 18 * ratio);
 
-  //frameRate(12);
-  //textSize(24);
-  // text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
+
+if (mouseIsPressed) {
+  shanescore();
+  ilyascore();
 }
 
-//function doubleClicked(img10) {
-  //loop();
-//}
-//function doubleClicked(img11) {
-  //loop();
-//}
+  frameRate(12);
+  textSize(24);
+  text("X: "+mouseX, 200, 100);
+  text("Y: "+mouseY, 50, 200);
+  
+
+
+function shanescore() {
+  if (mouseX > 450 && mouseX < 580 && mouseY >  550 && mouseY < 845) {
+    mouseIsPressed = true;
+  } else {
+    mouseIsPressed = false;
+  }
+  if (mouseIsPressed) {
+  fill ('black');
+  ellipse (puckX, 875, 40, 20); 
+  puckX = puckX + 15
+}
+}
+
+function ilyascore() {
+    if (mouseX > 750 && mouseX < 845 && mouseY > 525 && mouseY < 845) {
+    mouseIsPressed = true;
+  } else {
+    mouseIsPressed = false;
+  }
+  if (mouseIsPressed) {
+  fill ('black');
+  ellipse (puckX, 875, 40, 20);
+  puckX = puckX - 15
+}
+}
+}
+
 
 function windowResized() {
   const design_w = 1440;
