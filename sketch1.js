@@ -120,7 +120,6 @@ if (mouseIsPressed) {
   //textSize(24);
   //text("X: "+mouseX, 200, 100);
   //text("Y: "+mouseY, 50, 200);
-  
 
 
 function shanescore() {
