@@ -30,21 +30,21 @@ function setup() {
   link11 = createA(
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
-);
+  );
   cursor("assets/HR.png");
 }
 
 function draw() {
   //background("#D9DDE9");
-  
+
   image(img01, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img02, 0 * ratio, 700 * ratio);
   image(img03, 1050 * ratio, 700 * ratio);
   image(img04, 450 * ratio, 650 * ratio);
   image(img05, 750 * ratio, 615 * ratio);
 
-  fill ('black');
-  ellipse (630, 875, 40, 20);
+  fill("black");
+  ellipse(630, 875, 40, 20);
 
   image(img1, 135 * ratio, 297 * ratio);
   if (mouseX > 120 && mouseX < 260 && mouseY > 320 && mouseY < 435) {
@@ -56,7 +56,7 @@ function draw() {
     noStroke();
     fill(0, 150);
     rect(115, 258, 210, 180);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("You will not", 220, 330);
@@ -74,7 +74,7 @@ function draw() {
     noStroke();
     fill(0, 150);
     rect(965, 244, 210, 210);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("Is lie. Liar", 1075, 340);
@@ -82,7 +82,7 @@ function draw() {
   }
 
   image(img3, 675 * ratio, 200 * ratio);
-    if (mouseX > 590 && mouseX < 693 && mouseY > 175 && mouseY < 365) {
+  if (mouseX > 590 && mouseX < 693 && mouseY > 175 && mouseY < 365) {
     isHovering = true;
   } else {
     isHovering = false;
@@ -91,7 +91,7 @@ function draw() {
     noStroke();
     fill(0, 150);
     rect(594, 175, 101, 190);
-    fill('white')
+    fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
     text("Is", 645, 240);
@@ -110,45 +110,42 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
-
-if (mouseIsPressed) {
-  shanescore();
-  ilyascore();
-}
+  if (mouseIsPressed) {
+    shanescore();
+    ilyascore();
+  }
 
   //frameRate(12);
   //textSize(24);
   //text("X: "+mouseX, 200, 100);
   //text("Y: "+mouseY, 50, 200);
 
-
-function shanescore() {
-  if (mouseX > 450 && mouseX < 580 && mouseY >  550 && mouseY < 845) {
-    mouseIsPressed = true;
-  } else {
-    mouseIsPressed = false;
+  function shanescore() {
+    if (mouseX > 450 && mouseX < 580 && mouseY > 550 && mouseY < 845) {
+      mouseIsPressed = true;
+    } else {
+      mouseIsPressed = false;
+    }
+    if (mouseIsPressed) {
+      fill("black");
+      ellipse(puckX, 875, 40, 20);
+      puckX = puckX + 15;
+    }
   }
-  if (mouseIsPressed) {
-  fill ('black');
-  ellipse (puckX, 875, 40, 20); 
-  puckX = puckX + 15
-}
-}
 
-function ilyascore() {
+  function ilyascore() {
     if (mouseX > 750 && mouseX < 845 && mouseY > 525 && mouseY < 845) {
-    mouseIsPressed = true;
-  } else {
-    mouseIsPressed = false;
+      mouseIsPressed = true;
+    } else {
+      mouseIsPressed = false;
+    }
+    if (mouseIsPressed) {
+      fill("black");
+      ellipse(puckX, 875, 40, 20);
+      puckX = puckX - 15;
+    }
   }
-  if (mouseIsPressed) {
-  fill ('black');
-  ellipse (puckX, 875, 40, 20);
-  puckX = puckX - 15
 }
-}
-}
-
 
 function windowResized() {
   const design_w = 1440;
