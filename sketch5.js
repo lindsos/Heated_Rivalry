@@ -7,9 +7,9 @@ let img14;
 let img15;
 
 function preload() {
-  img08 = loadImage("/assets/episode_5/episode_5_background.png");
+  img08 = loadImage("assets/episode_5/episode_5_background.png");
   img13 = loadImage("assets/episode_5/gif_13.png");
-  img14 = loadImage("/assets/episode_5/gif_14.png");
+  img14 = loadImage("assets/episode_5/gif_14.png");
   img15 = loadImage("assets/episode_5/gif_15.png");
 }
 
@@ -74,7 +74,7 @@ function draw() {
   if (isHovering) {
     noStroke();
     fill(0, 150);
-    rect(871, 653, 92, 192);
+    rect(873, 653, 92, 192);
     fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
