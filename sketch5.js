@@ -23,7 +23,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  //cursor('assets/HR.png');
+  cursor('assets/HR.png');
 }
 
 function draw() {
@@ -42,12 +42,13 @@ function draw() {
     fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
-    text("I think", 678, 622);
-    text("I like", 678, 642);
-    text("you", 678, 662);
-    text("maybe", 678, 682);
-    text("a little", 678, 702);
-    text("much.", 678, 722);
+    text("I think", 678, 612);
+    text("I like", 678, 632);
+    text("you", 678, 652);
+    text("maybe", 678, 672);
+    text("a little", 678, 692);
+    text("too", 678, 712);
+    text("much.", 678, 732);
   }
 
   image(img14, 375 * ratio, 575 * ratio);
