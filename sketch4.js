@@ -7,6 +7,7 @@ var All_the_Things_She_Said;
 
 function preload() {
   img07 = loadImage("assets/episode_4/episode_4_background.png");
+  //img07 = loadImage("assets/episode_4/episode_4_background.png");
   img10 = loadImage("assets/episode_4/gif_10.png");
   img11 = loadImage("assets/episode_4/gif_11.png");
   img12 = loadImage("assets/episode_4/gif_12.png");
