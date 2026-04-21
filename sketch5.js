@@ -23,7 +23,7 @@ function setup() {
     "index.html",
     '<img src="assets/tv_remote.png", alt="tv_remote">',
   );
-  cursor('assets/HR.png');
+  cursor("assets/HR.png");
 }
 
 function draw() {
