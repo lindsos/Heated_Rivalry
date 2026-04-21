@@ -116,10 +116,10 @@ if (mouseIsPressed) {
   ilyascore();
 }
 
-  frameRate(12);
-  textSize(24);
-  text("X: "+mouseX, 200, 100);
-  text("Y: "+mouseY, 50, 200);
+  //frameRate(12);
+  //textSize(24);
+  //text("X: "+mouseX, 200, 100);
+  //text("Y: "+mouseY, 50, 200);
   
 
 
