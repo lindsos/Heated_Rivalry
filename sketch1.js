@@ -99,8 +99,8 @@ function draw() {
     text("you?", 645, 300);
   }
 
-  link1.position(5 * ratio, 0 * ratio);
-  link11.position(0 * ratio, 0 * ratio);
+  link1.position(5 * ratio, 90 * ratio);
+  link11.position(0 * ratio, -30 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");

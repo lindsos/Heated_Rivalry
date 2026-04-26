@@ -95,24 +95,15 @@ function draw() {
     text("before).", 790, 825);
   }
 
-  link1.position(5 * ratio, 0 * ratio);
-  link11.position(0 * ratio, 0 * ratio);
+  link1.position(5 * ratio, 90 * ratio);
+  link11.position(0 * ratio, -30 * ratio);
   link11.style("transform", "scale(0.5)");
   link1.style("font-size", "20px");
   link1.style("text-align", "CENTER");
   link1.style("text-style", "NORMAL");
-  link1.style("color", "black");
+  link1.style("color", "white");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
-
-  //if (mouseIsPressed === true && sunHeight === 1440) {
-    //background(0);
-  //}
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
 }
 
 function windowResized() {
