@@ -1,6 +1,8 @@
 let ratio;
-let isHovering = false;
 var puckX = 630;
+let puckY = 850;
+let puckSpeedX = 0;
+let scoring = false;
 let img01;
 let img02;
 let img03;
@@ -42,9 +44,6 @@ function draw() {
   image(img03, 1050 * ratio, 700 * ratio);
   image(img04, 450 * ratio, 650 * ratio);
   image(img05, 750 * ratio, 615 * ratio);
-
-  fill("black");
-  ellipse(630, 875, 40, 20);
 
   image(img1, 135 * ratio, 297 * ratio);
   if (mouseX > 120 && mouseX < 260 && mouseY > 320 && mouseY < 435) {
@@ -110,40 +109,36 @@ function draw() {
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
 
-  if (mouseIsPressed) {
-    shanescore();
-    ilyascore();
+  if (scoring) {
+    puckX += puckSpeedX;
+
+    if (puckX < 100 || puckX > 1110) {
+      puckX = 630;
+      puckSpeedX = 0;
+      scoring = false;
+    }
   }
+
+  fill(20, 20, 10);
+  ellipse(puckX, puckY, 40, 20);
 
   //frameRate(12);
   //textSize(24);
   //text("X: "+mouseX, 200, 100);
   //text("Y: "+mouseY, 50, 200);
+}
 
-  function shanescore() {
-    if (mouseX > 450 && mouseX < 580 && mouseY > 550 && mouseY < 845) {
-      mouseIsPressed = true;
-    } else {
-      mouseIsPressed = false;
-    }
-    if (mouseIsPressed) {
-      fill("black");
-      ellipse(puckX, 875, 40, 20);
-      puckX = puckX + 15;
-    }
+function mousePressed() {
+  if (scoring) return;
+
+  if (mouseX > 370 && mouseX < 550 && mouseY > 550 && mouseY < 850) {
+    puckSpeedX = 30;
+    scoring = true;
   }
 
-  function ilyascore() {
-    if (mouseX > 750 && mouseX < 845 && mouseY > 525 && mouseY < 845) {
-      mouseIsPressed = true;
-    } else {
-      mouseIsPressed = false;
-    }
-    if (mouseIsPressed) {
-      fill("black");
-      ellipse(puckX, 875, 40, 20);
-      puckX = puckX - 15;
-    }
+  if (mouseX > 645 && mouseX < 845 && mouseY > 525 && mouseY < 840) {
+    puckSpeedX = -30;
+    scoring = true;
   }
 }
 
