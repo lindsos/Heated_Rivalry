@@ -7,7 +7,6 @@ var All_the_Things_She_Said;
 
 function preload() {
   img07 = loadImage("assets/episode_4/episode_4_background.png");
-  //img07 = loadImage("assets/episode_4/episode_4_background.png");
   img10 = loadImage("assets/episode_4/gif_10.png");
   img11 = loadImage("assets/episode_4/gif_11.png");
   img12 = loadImage("assets/episode_4/gif_12.png");
@@ -30,7 +29,6 @@ function setup() {
 }
 
 function draw() {
-  //background("#F5FDFF");
   image(img07, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img10, 910 * ratio, 620 * ratio);
   if (mouseX > 800 && mouseX < 1010 && mouseY > 545 && mouseY < 661) {
@@ -101,11 +99,6 @@ function draw() {
       All_the_Things_She_Said.play();
     }
   }
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
 }
 
 function windowResized() {

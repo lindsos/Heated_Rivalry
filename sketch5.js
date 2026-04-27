@@ -29,7 +29,7 @@ function setup() {
 function draw() {
   //background("#a2def8");
   image(img08, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
-  image(img13, 650 * ratio, 650 * ratio);
+  image(img13, 741.5 * ratio, 650 * ratio);
   if (mouseX > 650 && mouseX < 705 && mouseY > 577 && mouseY < 765) {
     isHovering = true;
   } else {
@@ -38,7 +38,7 @@ function draw() {
   if (isHovering) {
     noStroke();
     fill(0, 150);
-    rect(646, 570, 65, 200);
+    rect(646, 565, 65, 215);
     fill("white");
     textSize(20);
     textAlign(CENTER, CENTER);
@@ -141,11 +141,6 @@ function draw() {
   ellipse(xpos + 1020, 50 * ratio, 100 * ratio, 50 * ratio);
   ellipse(xpos + 1040, 70 * ratio, 100 * ratio, 50 * ratio);
   bounce();
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: " + mouseX, 200, 100);
-  //text("Y: " + mouseY, 50, 200);
 }
 
 function bounce() {

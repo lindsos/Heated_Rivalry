@@ -90,12 +90,6 @@ function draw() {
   link1.style("color", "white");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
-
 }
 
 function mousePressed() {

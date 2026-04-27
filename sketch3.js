@@ -33,7 +33,6 @@ function setup() {
 }
 
 function draw() {
-  //background("#163355");
   image(img06, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   for (i = 1; i <= 4; i++) {}
   for (i = 0; i < lights.length; i++) {
@@ -111,12 +110,6 @@ function draw() {
   link1.style("color", "white");
   link1.style("text-decoration", "none");
   link1.style("font-family", "helvetica-neue-lt-pro");
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
-
 }
 
 function windowResized() {

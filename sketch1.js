@@ -37,8 +37,6 @@ function setup() {
 }
 
 function draw() {
-  //background("#D9DDE9");
-
   image(img01, 0 * ratio, 0 * ratio, 1440 * ratio, 1024 * ratio);
   image(img02, 0 * ratio, 700 * ratio);
   image(img03, 1050 * ratio, 700 * ratio);
@@ -121,11 +119,6 @@ function draw() {
 
   fill(20, 20, 10);
   ellipse(puckX, puckY, 40, 20);
-
-  //frameRate(12);
-  //textSize(24);
-  //text("X: "+mouseX, 200, 100);
-  //text("Y: "+mouseY, 50, 200);
 }
 
 function mousePressed() {
